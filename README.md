@@ -43,7 +43,42 @@ The goal of this project is to help banks develop their chatbot system, so they 
 ## Requirements
 A list of the software and hardware requirements to run the project, including any required packages and libraries.
 
+- Google Colab
+  - Google Colab is a free, cloud-based Jupyter notebook environment. It provides an easy-to-use platform for developing, training, and testing machine learning models, and the benefits of using Google Colab for machine learning projects include:
 
+      - Accessibility: Google Colab is free and accessible from any device with an internet connection, making it easy to get started with machine learning.
+      - Cloud computing resources: Google Colab provides access to powerful cloud computing resources, including GPUs and TPUs, making it easier to train large and complex models.
+      - Collaboration: Google Colab provides real-time collaboration, allowing multiple people to work on a project together in real-time.
+      - Integration with Google Drive: Google Colab integrates with Google Drive, making it easy to store and share projects.
+      - Access to pre-installed packages: Google Colab provides access to many pre-installed packages, reducing the time and effort required to set up the environment for a machine learning project.
+
+
+
+- DVC (Data Version Control)
+  - DVC provides version control for large data files, making it easier to track changes, collaborate with others, and reproduce results. There are several benefits of using DVC for machine learning projects:
+  
+      - Data versioning: DVC helps to version large data files, which can be difficult to handle with traditional version control systems.
+      - Reproducibility: DVC enables reproducibility by tracking the exact data and code used to produce results.
+      - Collaboration: DVC makes it easier for multiple team members to work on a project together, by providing version control for both code and data.
+      - Data storage: DVC allows data to be stored in a remote repository, making it easier to share data between team members and ensuring data is not lost.
+      - Flexibility: DVC supports different storage backends, allowing you to choose the most suitable one for your project.
+
+- Docker
+   - Docker is a platform that enables developers to easily deploy, run, and manage applications in containers. It allows applications to run in isolated environments, making them portable and efficient to deploy. Benefits of using Docker for machine learning projects include: 
+   
+     - Isolation: Applications run in their own isolated environments, which ensures that dependencies and configurations are kept separate.
+     - Portability: Applications can be easily moved from one environment to another, which simplifies deployment and makes it easier to manage multiple environments.
+     - Scalability: Applications can be scaled easily by adding more containers, which helps to handle increasing workloads.
+     - Reproducibility: Docker makes it easier to create reproducible environments, which is especially important in machine learning where results need to be consistent and repeatable.
+    
+
+- MLflow
+  - MLflow is used for managing the end-to-end machine learning workflow, including experimentation, reproducibility, and deployment. It provides the following benefits:
+
+    - Experiment tracking: MLflow allows you to keep track of all your experiments, including parameters, code, and results, in a centralized repository.
+    - Reproducibility: MLflow helps ensure that your experiments can be easily reproduced, even by others, by providing a clear record of what was run, with what parameters, and what results were obtained.
+    - Deployment: MLflow makes it easy to deploy models in various production environments, by providing a platform-agnostic API for model deployment and serving.
+    - Model Management: MLflow enables you to manage the entire life cycle of your models, including versioning, archiving, and sharing.
 
 
 
@@ -51,11 +86,16 @@ A list of the software and hardware requirements to run the project, including a
 
 
 ## Data
-A description of the data used in the project, including where it was obtained and how it was processed.
 
-You can obtain the data on [Hugging Face Datasets page](https://huggingface.co/datasets/banking77)
+The dataset used in this project can be found at [Hugging Face Datasets page](https://huggingface.co/datasets/banking77). The dataset consists of online banking queries paired with their respective intents. The following are the examples from the dataset. 
 
+| Text | Intent (category) |
+| --- | --- |
+| "Is there a tracking number for the card?" | card_arrival |
+| "Can I get my card fast tracked?" | card_delivery_estimate |
+| "I think my card is broken" | card_not_working |
 
+There are 77 different intents in the dataset with 10,003 training examples. The number of training examples varies for each intent (category). 
 
 
 
