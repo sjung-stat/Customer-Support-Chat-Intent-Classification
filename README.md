@@ -103,8 +103,18 @@ There are 77 different intents in the dataset with 10,003 training examples. The
 ## Methodology
 A detailed explanation of the machine learning approach taken in the project, including the algorithms used, feature selection techniques, and evaluation metrics.
 
+For an intent classification task in a machine learning project, a Transformer-based model would be a good choice. Here are some popular Transformer models that have been used successfully for intent classification:
+	
+- __BERT (Bidirectional Encoder Representations from Transformers)__: 
+    - BERT is a pre-trained Transformer model that has been fine-tuned on a large corpus of text. BERT can be fine-tuned on a small amount of intent classification data to achieve state-of-the-art results.
+- __RoBERTa (Robustly Optimized BERT Pretraining Approach)__: 
+    - RoBERTa is a variant of BERT that has been pre-trained on a larger corpus of text and fine-tuned for longer. RoBERTa can achieve even better results than BERT for intent classification tasks.
+- __ALBERT (A Lite BERT)__: 
+    - ALBERT is a lighter version of BERT that uses fewer parameters and is faster to train. ALBERT can be fine-tuned for intent classification tasks and has been shown to perform well compared to BERT and RoBERTa.
+- __DistilBERT__: 
+    - DistilBERT is a smaller and faster version of BERT that has been distilled from a full-sized BERT model. DistilBERT can be fine-tuned for intent classification tasks and has been shown to achieve good results with less computational resources.
 
-
+We will experiment with some of the models above and fine-tuning techniques to find the best solution for this project.
 
 
 
